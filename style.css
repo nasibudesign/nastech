@@ -147,7 +147,7 @@ p.para{
     
     margin-left: -2rem;
     margin-top: -2rem;
-    color: var(--blue-color);
+    
 }
 .years-area{
     background: url(./img/about-me.png) no-repeat 40px 20px;
@@ -280,18 +280,20 @@ p.para{
     }
     .years-area{
         height: 200px;
+        padding-left: 0;
         justify-content: center;
     }
     .years{
         margin-top: 70px;
-        position: relative;            
+        position: relative;
+        text-shadow: 2px 3px 4px white;
     }
     .years-practice {
-        margin-top: 60px;
-        font-size: 20px;
+        margin-top: 70px;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 2px 3px 4px white;
         position: relative;
     }
-
-   
-
+  
 }
