@@ -2,6 +2,8 @@
 :root{
     --blue-color: rgb(0, 125, 228);
     --grey-color:#555;
+    --box-shadow-light: 0px 1px 10px rgba(57,56,61,0.101);
+    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
 }
 *{
     margin: 0;
@@ -13,7 +15,6 @@
     font-size: 50px;
     line-height: 72px;
 }
-
 
 
 /*---NavBar---*/
@@ -28,7 +29,7 @@
 .navbar-brand img
 {
     height: 40px;
-    padding-left: 30px;
+    padding-left: 15px;
 }
 .navbar-brand li
 {
@@ -138,7 +139,8 @@
     line-height: 40px;
 }
 .paragraph >p{
-    padding: 0;
+    padding: 1rem 0;
+    line-height: 1.7rem;
 }
 p.para{
     font: normal 500 16px/25px ;
@@ -185,6 +187,45 @@ p.para{
 {
     border-radius: 16px;
 }
+/*---------Services---------*/
+.services-area{
+    padding: 3rem 0;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.services-title h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: auto;
+    min-height: 400px;
+    margin: 2rem auto;
+    transition: .7s ease;
+    box-shadow: var(--box-shadow-light);
+}
+.services:hover{
+    box-shadow: var(--box-shadow);
+}
+.card-title{
+    padding-top: 2rem;
+    font-weight: bold;
+    color: var(--grey-color);
+}
+.icon
+{
+    font-size: 35px;
+    margin: 0rem auto;
+    padding: 10px 0 20px 0;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    color: var(--blue-color);
+    border: 3px solid var(--blue-color);
+    border-radius: 50%;
+}
 
 
 
@@ -227,6 +268,7 @@ p.para{
     .paragraph p{
         padding-right: 3rem ;
     }
+
 }
 
 /*--------- Small Devices ------*/
