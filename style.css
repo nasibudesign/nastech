@@ -129,12 +129,13 @@
         z-index: 10;
     }
     #home-site{
-        height: 1200px;
+        height: auto;
+        padding-bottom: 4rem;
       
     }
     .site-title h1{
         margin-top: 1rem;
-        font-size: 3rem ;
+        font-size: 3.7rem ;
     }
 
 }
@@ -143,6 +144,8 @@
 @media (min-width: 768px) and (max-width: 991px) {
    #home-site {
        text-align: center;
+       height: auto;
+       padding-bottom: 4rem;
        
    }
    .site-buttons{
@@ -160,6 +163,8 @@
 @media(max-width: 767px){
     #home-site{
         text-align: center;
+        height: auto;
+        padding-bottom: 4rem;
     } 
     .site-title h1{
         margin-top: 1rem;
