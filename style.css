@@ -93,6 +93,10 @@
     margin-bottom: 3rem;
 }
 
+.btn-outline-light{
+    margin-left: 2rem;
+}
+
 /*--------Load Console-----*/
 .terminal-window{
     color: yellowgreen !important;
@@ -126,14 +130,11 @@
     }
     #home-site{
         height: 1200px;
-        text-align: center;
-
+      
     }
-   .site-buttons{
-    justify-content: center;
-    }
-   .terminal-window{
-    display: none;
+    .site-title h1{
+        margin-top: 1rem;
+        font-size: 3rem ;
     }
 
 }
@@ -145,7 +146,9 @@
        
    }
    .site-buttons{
+       text-align: center;
        justify-content: center;
+       padding: 0;
    }
    .terminal-window{
        display: none;
@@ -158,4 +161,20 @@
     #home-site{
         text-align: center;
     } 
+    .site-title h1{
+        margin-top: 1rem;
+        font-size: 3rem ;
+    }
+    .site-title h4{
+        font-size: 1.5rem ;
+    }
+    
+   .terminal-window{
+    display: none;
+    }
+    
+.btn-outline-light{
+    margin: 2rem 1rem;
+    
+}
 }
