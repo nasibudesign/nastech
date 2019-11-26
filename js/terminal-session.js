@@ -22,7 +22,13 @@ $(function() {
       action: 'type',
       strings: ["that was easy!", ''],
       postDelay: 2000
-    }
+    },
+    { 
+        action: 'type',
+        strings: ["cd tests^400"],
+        output: ' ',
+        postDelay: 1000
+      },
     
   ];
     runScripts(data, 0);
@@ -64,6 +70,7 @@ $(function() {
             });
             break;
           case 'view':
+              
   
             break;
             

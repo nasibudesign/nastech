@@ -17,6 +17,7 @@
     top: 0;
     z-index: 100;
     padding: 0rem 0rem;
+    background-color: white;
 }
 .navbar-brand img
 {
@@ -69,7 +70,7 @@
     padding-bottom: 50px;   
 }
 .site-title h3{
-    padding-top:35% ;
+    padding-top:20% ;
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -98,7 +99,7 @@
     font-size: 1.1rem;
     font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
     background: rgba(26, 26, 26, 0.644);
-    margin-top: 30%;
+    margin-top: 20%;
     min-height: 65%;
     height: 80%;
     border-radius: 7px;
@@ -121,7 +122,20 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     #nav-bar{
         padding: 0rem 2rem;
+        z-index: 10;
     }
+    #home-site{
+        height: 1200px;
+        text-align: center;
+
+    }
+   .site-buttons{
+    justify-content: center;
+    }
+   .terminal-window{
+    display: none;
+    }
+
 }
 
 /*--------- Small Devices ------*/
@@ -132,6 +146,9 @@
    }
    .site-buttons{
        justify-content: center;
+   }
+   .terminal-window{
+       display: none;
    }
    
 }
