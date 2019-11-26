@@ -1,4 +1,8 @@
 /*---Initializing---*/
+:root{
+    --blue-color: rgb(0, 125, 228);
+    --grey-color:#555;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +10,10 @@
 }
 .title-text{
     font: normal bold 50px/72px;
-
+    font-size: 50px;
+    line-height: 72px;
 }
+
 
 
 /*---NavBar---*/
@@ -35,8 +41,8 @@
 }
 #nav-bar ul li a:hover
 {
-    color: rgba(0, 0, 110, 0.747) !important;
-    border-bottom: 1px #555 solid;
+    color: var(--blue-color) !important;
+    border-bottom: 1px var(--grey-color) solid;
     transition: 0.4s ease-in;
 }
 .navbar
@@ -53,7 +59,7 @@
 }
 .nav-link
 {
-    color: #555 !important;
+    color: var(--grey-color) !important;
     font-weight: 600;
     font-size: 16px;
 }
@@ -112,6 +118,83 @@
     overflow-x: hidden;
 }
 
+/*-----Abou area--------*/
+.about-area{
+    padding: 4rem 0;
+}
+.about-area h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.about-title{
+    font: normal bold ;
+    
+}
+.about-title h2> span{
+    display: block;
+    font: normal bold ;
+    letter-spacing: 18px;
+    font-size: 38px;
+    line-height: 40px;
+}
+.paragraph >p{
+    padding: 1rem 1rem 1rem 0;
+}
+p.para{
+    font: normal 500 16px/25px ;
+}
+.experience-area{
+    margin-left: -2rem;
+    margin-top: -2rem;
+    color: var(--blue-color);
+}
+.years-area{
+    background: url(./img/about-me.png) no-repeat 40px 20px;
+    padding: 2rem 0;
+    width: auto;
+    height: auto;
+    padding-left: 9rem;
+    position: relative;
+}
+.years{
+    font: normal bold;
+    font-size: 84px;
+    line-height: 40px;
+    margin-left: 2rem;
+    z-index: 2;
+    
+}
+.experience-area span{
+    display: block;
+}
+.skills-bar{
+    margin-top: 2rem;
+}
+
+.skills-bar p
+{
+    margin-bottom: 0rem;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 2rem;
+}
+.progress-bar
+{
+    border-radius: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------- Responsive ------------------------------- */
 
@@ -119,6 +202,9 @@
 @media (min-width: 1300px){
     #nav-bar{
         padding: 0rem 5rem;
+    }
+    .paragraph p{
+        padding-right: 2rem ;
     }
 }
 
@@ -136,8 +222,10 @@
     .site-title h1{
         margin-top: 1rem;
         font-size: 3.7rem ;
+    } 
+    .paragraph p{
+        padding-right: 3rem ;
     }
-
 }
 
 /*--------- Small Devices ------*/
@@ -157,6 +245,9 @@
        display: none;
    }
    
+   .about-title{
+    text-align: center;
+    }
 }
 
 /*---- Extra Small Devices -----*/
@@ -178,8 +269,12 @@
     display: none;
     }
     
-.btn-outline-light{
+    .btn-outline-light{
     margin: 2rem 1rem;
-    
-}
+    }
+    .about-area{
+        text-align: center;
+        padding: 0 3rem;
+    }
+
 }
