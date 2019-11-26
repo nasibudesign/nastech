@@ -276,7 +276,10 @@ p.para{
     }
     .about-area{
         text-align: center;
-        padding: 3rem 0;
+        padding: 3rem 1rem;
+    }
+    .about-title{
+        margin-top: -1.5rem;
     }
     .about-area h2 > span{
         font-size: 25px;
