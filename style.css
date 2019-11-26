@@ -138,12 +138,13 @@
     line-height: 40px;
 }
 .paragraph >p{
-    padding: 1rem 1rem 1rem 0;
+    padding: 0;
 }
 p.para{
     font: normal 500 16px/25px ;
 }
 .experience-area{
+    
     margin-left: -2rem;
     margin-top: -2rem;
     color: var(--blue-color);
@@ -244,10 +245,11 @@ p.para{
    .terminal-window{
        display: none;
    }
-   
    .about-title{
     text-align: center;
+    display: inline;
     }
+
 }
 
 /*---- Extra Small Devices -----*/
@@ -274,7 +276,22 @@ p.para{
     }
     .about-area{
         text-align: center;
-        padding: 0 3rem;
+        padding: 3rem 0;
     }
+    .years-area{
+        height: 200px;
+        justify-content: center;
+    }
+    .years{
+        margin-top: 70px;
+        position: relative;            
+    }
+    .years-practice {
+        margin-top: 60px;
+        font-size: 20px;
+        position: relative;
+    }
+
+   
 
 }
