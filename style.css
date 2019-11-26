@@ -1,0 +1,144 @@
+/*---Initializing---*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', cursive;
+}
+.title-text{
+    font: normal bold 50px/72px;
+
+}
+
+
+/*---NavBar---*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0rem 0rem;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-brand li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: right;
+}
+#nav-bar ul li a:hover
+{
+    color: rgba(0, 0, 110, 0.747) !important;
+    border-bottom: 1px #555 solid;
+    transition: 0.4s ease-in;
+}
+.navbar
+{
+    background: white;
+}
+.navbar-toggler
+{
+    border: none !important;
+}
+.nav-item
+{
+    padding: 0 10px;
+}
+.nav-link
+{
+    color: #555 !important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*----Home-------*/
+#home-site{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.747)),
+    url(img/home.jpg);
+    height: 92vh;
+    background-size: cover;
+    background-position: center;
+    color: white !important;
+    padding-top: 50px;
+    padding-bottom: 50px;   
+}
+.site-title h3{
+    padding-top:35% ;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.site-title h3:after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: white;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+.site-title h1{
+    margin-top: 2rem;
+    font-size: 5rem ;
+}
+.site-title h4{
+    font-size: 2rem ;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/*--------Load Console-----*/
+.terminal-window{
+    color: yellowgreen !important;
+    font-size: 1.1rem;
+    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    background: rgba(26, 26, 26, 0.644);
+    margin-top: 30%;
+    min-height: 65%;
+    height: 80%;
+    border-radius: 7px;
+    opacity: 0.8;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/*------------------------------- Responsive ------------------------------- */
+
+/*-------- Larger Devices ------ */
+@media (min-width: 1300px){
+    #nav-bar{
+        padding: 0rem 5rem;
+    }
+}
+
+/*--------- Medium Devices ------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #nav-bar{
+        padding: 0rem 2rem;
+    }
+}
+
+/*--------- Small Devices ------*/
+@media (min-width: 768px) and (max-width: 991px) {
+   #home-site {
+       text-align: center;
+       
+   }
+   .site-buttons{
+       justify-content: center;
+   }
+   
+}
+
+/*---- Extra Small Devices -----*/
+@media(max-width: 767px){
+    #home-site{
+        text-align: center;
+    } 
+}
