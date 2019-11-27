@@ -19,6 +19,7 @@
     <!---- Font Awsome cdn------>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--custom css style-->
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/terminal-session.css">
     <link rel="stylesheet" href="style.css">
     <title>NasDesign</title>
@@ -280,7 +281,7 @@
         <p class="para text-center">Leave me a text in my mail or text me through Whathapp or more</p>
         <div class="row">
             <div class="col-md-6">
-                <form action="POST" method="POST" data-netlify="true" class="contact-form">
+                <form action="" method="POST" data-netlify="true" class="contact-form">
                 <div class="form-group">
                     <input type="text" name="name" class="form-control" placeholder="You Name">
                 </div>
@@ -291,11 +292,9 @@
                     <textarea name="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
                 </div>
                 <div class="form-group">
-                    <div data-netlify-recaptcha="true"></div>
+                    <div data-netlify-recaptcha="false"></div>
                 </div>
-                <div class="actions">
-                <button type="submit" value="send Message" class="btn btn-primary">SEND MESSAGE</button>
-                </div>
+                <button type="submit" value="send Message" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">SEND MESSAGE</button>
                 </form>
             </div>
             <div class="col-md-6 contact-info">
@@ -312,7 +311,26 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            Your form submission has been received.
+            </div>
+          </div>
+        </div>
+</div>
+        
 </section>
+
+
 
 
 
