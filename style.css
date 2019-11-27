@@ -229,6 +229,46 @@ p.para{
     border-radius: 50%;
 }
 
+/*---- Contact -------*/
+#contact-area{
+    padding: 3rem 0;
+    background-color: rgba(238, 238, 238, 0.438);
+}
+#contact-area h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+.contact-form{
+    padding: 15px;
+}
+
+.form-control
+{
+    border-radius: 4px !important;
+    border: none !important;
+}
+::placeholder
+{
+    color: #999999 !important;
+}
+.follow
+{
+    background: white;
+    padding: 10px;
+    
+}
+.contact-info
+{
+    margin-top: 15px;
+
+}
+.contact-info .fa
+{
+    margin: 10px;
+    color: var(--blue-color);
+    font-weight: bold;
+}
+
 
 
 
