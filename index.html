@@ -280,7 +280,7 @@
         <p class="para text-center">Leave me a text in my mail or text me through Whathapp or more</p>
         <div class="row">
             <div class="col-md-6">
-                <form action="" method="POST" data-netlify="true" class="contact-form">
+                <form action="POST" method="POST" data-netlify="true" class="contact-form">
                 <div class="form-group">
                     <input type="text" name="name" class="form-control" placeholder="You Name">
                 </div>
@@ -293,7 +293,9 @@
                 <div class="form-group">
                     <div data-netlify-recaptcha="true"></div>
                 </div>
-                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                <div class="actions">
+                <button type="submit" value="send Message" class="btn btn-primary">SEND MESSAGE</button>
+                </div>
                 </form>
             </div>
             <div class="col-md-6 contact-info">
