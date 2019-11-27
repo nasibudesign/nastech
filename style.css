@@ -70,12 +70,12 @@
 #home-site{
     background-image: linear-gradient(rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.747)),
     url(img/home.jpg);
-    height: 92vh;
+    height: auto;
     background-size: cover;
     background-position: center;
     color: white !important;
     padding-top: 50px;
-    padding-bottom: 50px;   
+    padding-bottom: 15rem;   
 }
 .site-title h3{
     padding-top:20% ;
@@ -191,7 +191,7 @@ p.para{
 /*---------Services---------*/
 .services-area{
     padding: 3rem 0;
-    background-color: whitesmoke;
+    background-color: rgba(238, 238, 238, 0.212);
     text-align: center;
 }
 .services-title h1{
@@ -199,7 +199,7 @@ p.para{
     font-weight: bold;
 }
 .services{
-    background: rgba(248, 252, 253, 0.973);
+    background: rgba(240, 240, 240, 0.959);
     padding: 2rem 0;
     width: auto;
     border-radius: 10px;
@@ -233,6 +233,23 @@ p.para{
 
 
 
+/*-------Footer--------*/
+#footer
+{
+    background: #333;
+    color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 2rem ;
+}
+.fa-heart-o
+{
+    margin: 3px;
+    color: red;
+}
+
+
+
+
 
 
 
@@ -260,7 +277,7 @@ p.para{
     }
     #home-site{
         height: auto;
-        padding-bottom: 4rem;
+        padding-bottom: 5rem;
       
     }
     .site-title h1{
@@ -279,6 +296,7 @@ p.para{
        text-align: center;
        height: auto;
        padding-bottom: 4rem;
+       padding-top: 2rem;
        
    }
    .site-buttons{
