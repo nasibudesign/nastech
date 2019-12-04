@@ -254,7 +254,7 @@ p.para{
     padding-top: 2rem;
     
 }
-.col-md-4
+.col-md-6
 {
     margin: 40px auto;
 }
@@ -496,6 +496,9 @@ blockquote::after
         font-weight: bold;
         text-shadow: 2px 3px 4px white;
         position: relative;
+    }
+    #testimonials{
+        padding: 0 2rem;
     }
   
 }
