@@ -15,6 +15,15 @@
     font-size: 50px;
     line-height: 72px;
 }
+h1::after
+{
+    content:'';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 5px auto 2rem;
+}
 
 
 /*---NavBar---*/
@@ -229,6 +238,90 @@ p.para{
     border-radius: 50%;
 }
 
+
+/*-----Testimonials------*/
+#testimonials
+{
+    padding: 3rem 0;
+    background-color: rgba(238, 238, 238, 0.438);
+}
+#testimonials h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+#testimonials .row
+{
+    padding-top: 2rem;
+    
+}
+.col-md-4
+{
+    margin: 40px auto;
+}
+.profile
+{
+    padding: 70px 10px 10px;
+    background-color: #efefef;
+    height: auto;
+    min-height: 250px;
+}
+.user
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile img
+{
+    top:-60px;
+    position: absolute;
+    left: calc(50% -60px);
+    border: 10px solid #fff;
+}
+.profile h3
+{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+#testimonials span
+{
+    font-size: 12px;
+    font-weight: 333;
+    color: #333;
+}
+blockquote
+{
+    font-size: 16px;
+    line-height: 30px;
+}
+blockquote::before
+{
+    content: open-quote;
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+blockquote::after
+{
+    content: close-quote;
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+.profile:hover
+{
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 /*---- Contact -------*/
 #contact-area{
     padding: 3rem 0;
@@ -268,6 +361,7 @@ p.para{
     color: var(--blue-color);
     font-weight: bold;
 }
+
 
 
 
