@@ -113,6 +113,14 @@ h1::after
 .btn-outline-light{
     margin-left: 2rem;
 }
+.btn-outline-light a{
+    text-decoration: none !important;
+    color: var(--blue-color);
+}
+.btn-outline-light a:hover{
+    text-decoration: none !important;
+    color: black !important;
+}
 
 /*--------Load Console-----*/
 .terminal-window{
@@ -325,14 +333,14 @@ blockquote::after
 /*---- Contact -------*/
 #contact-area{
     padding: 3rem 0;
-    background-color: rgba(238, 238, 238, 0.438);
+    background-color: rgba(238, 238, 238, 0.589);
 }
 #contact-area h1{
     font-size: 35px;
     font-weight: bold;
 }
 .contact-form{
-    padding: 15px;
+    padding: 1rem;
 }
 
 .form-control
@@ -352,7 +360,7 @@ blockquote::after
 }
 .contact-info
 {
-    margin-top: 15px;
+    margin-top: 3rem;
 
 }
 .contact-info .fa
@@ -468,6 +476,7 @@ blockquote::after
     .btn-outline-light{
     margin: 2rem 1rem;
     }
+    
     .about-area{
         text-align: center;
         padding: 3rem 1rem;
@@ -499,6 +508,13 @@ blockquote::after
     }
     #testimonials{
         padding: 0 2rem;
+    }
+    .contact-info{
+        margin: 2rem 1rem;
+    }
+    .contact-form .send-button{
+        float: right;
+        margin-top: 1.5rem;
     }
   
 }
