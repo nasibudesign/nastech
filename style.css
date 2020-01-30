@@ -100,7 +100,7 @@ h1::after
     margin-left: 5%;
     transform: translateY(-10px);
 }
-.site-title h1{
+.site-title h2{
     margin-top: 2rem;
     font-size: 5rem ;
 }
@@ -112,6 +112,7 @@ h1::after
 
 .btn-outline-light{
     margin-left: 2rem;
+    
 }
 .btn-outline-light a{
     text-decoration: none !important;
@@ -120,7 +121,7 @@ h1::after
 .btn-outline-light a:hover{
     text-decoration: none !important;
     color: black !important;
-}
+}j
 
 /*--------Load Console-----*/
 .terminal-window{
