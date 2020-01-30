@@ -121,7 +121,7 @@ h1::after
 .btn-outline-light a:hover{
     text-decoration: none !important;
     color: black !important;
-}j
+}
 
 /*--------Load Console-----*/
 .terminal-window{
@@ -131,7 +131,7 @@ h1::after
     background: rgba(26, 26, 26, 0.644);
     margin-top: 20%;
     min-height: 65%;
-    height: 80%;
+    height: 75%;
     border-radius: 7px;
     opacity: 0.8;
     overflow-y: auto;
