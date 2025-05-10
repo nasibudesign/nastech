@@ -100,7 +100,7 @@
                             <a href="https://wa.me/243993251148?text=Hi%20I'am%20Interrested%20by%20your%20portofolio,%20so%20I%20would%20like%20to%20hire%20you%20for%20...%20"
                                 target="_blank" class="btn btn-primary btn-lg text-uppercase font-weight-bold"
                                 role="button" aria-disabled="false">hire me now</a>
-                            <a href="./file/cv_sept_2021.pdf" target="_blank"
+                            <a href="./file/cv_2024.pdf" target="_blank"
                                 class="btn btn-outline-light btn-lg  text-uppercase" role="button"
                                 aria-disabled="false">get cv</a>
                         </div>
@@ -188,7 +188,7 @@
                 <div class="col-lg-6 col-md-12 ">
                     <div class="experience-area pt-5">
                         <div class="d-flex flex-row years-area">
-                            <h2 class="p-3 years text-primary">8</h2>
+                            <h2 class="p-3 years text-primary" id="years-count"></h2>
                             <h2 class="years-practice text-uppercase text-primary">
                                 <span>years</span>
                                 <span>practice</span>
@@ -405,7 +405,7 @@
     <!----------Footer---------->
     <section id="footer">
         <div class="container text-center">
-            <p>Made With <i class="fa fa-heart-o"></i> by Hussein Nasibu from congo 🇨🇩 &nbsp;&nbsp;&nbsp;&nbsp; © 2021
+            <p>Made With <i class="fa fa-heart-o"></i> by Hussein Nasibu from congo 🇨🇩 &nbsp;&nbsp;&nbsp;&nbsp;<span id="year"></span>
             </p>
         </div>
     </section>
@@ -418,7 +418,16 @@
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
-
+    <script>
+        // Insert current year dynamically
+        document.getElementById('year').innerHTML = `© ${new Date().getFullYear()}`;
+    </script>
+    <script>
+        const startYear = 2016;
+        const currentYear = new Date().getFullYear();
+        const yearsExperience = currentYear - startYear;
+        document.getElementById('years-count').textContent = yearsExperience;
+    </script>
 </body>
 
 </html>
